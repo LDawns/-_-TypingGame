@@ -1,0 +1,8 @@
+module getbit(clk,h_ascii,v_addr,bit);
+always @(negedge clk)
+begin
+	bit<=h_ascii[v_addr%9];
+end
+
+
+endmodule

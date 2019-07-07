@@ -1,0 +1,26 @@
+module random_le(clk,h_addr,font);
+
+input clk;
+output reg [9:0]h_addr;
+output reg [143:0]font;
+reg [7:0]a;
+reg [7:0]b;
+reg [10:0]c = 200;
+random	random_inst (
+	.address ( c%26 ),
+	.clock ( clk ),
+	.data ( 144'b0 ),
+	.wren ( 1'b0 ),
+	.q ( font )
+	);
+
+parameter a = 30;
+parameter b = 200;
+
+always @(posedge clk)
+begin
+	c <= c + 1;
+	h_addr <= (c % (b-a+1))+ a;
+end
+
+endmodule

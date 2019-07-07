@@ -1,0 +1,50 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=144;
+DEPTH=26;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0   :   000000E005F00510051007E003F000100000;
+	1   :   000020003FF03FF00410061003F001E00000;
+	2   :   000003E007F0041004100410063002200000;
+	3   :   000001E003F0061024103FE03FF000100000;
+	4   :   000003E007F0051005100510073003200000;
+	5   :   000002101FF03FF022103000180000000000;
+	6   :   000003E407F60412041203FE07FC04000000;
+	7   :   000020103FF03FF00200040007F003F00000;
+	8   :   000000000000041037F037F0001000000000;
+	9   :   00000000000C000E0002040237FE37FC0000;
+	10  :   000020103FF03FF0018003C0067004300000;
+	11  :   00000000000020103FF03FF0001000000000;
+	12  :   000007F007F0060003E0060007F003F00000;
+	13  :   0000040007F003F00400040007F003F00000;
+	14  :   000003E007F004100410041007F003E00000;
+	15  :   0000040207FE03FE0412041007F003E00000;
+	16  :   000003E007F00410041203FE07FE04020000;
+	17  :   0000041007F003F006100400070003000000;
+	18  :   0000022007300590049004D0067002200000;
+	19  :   0000040004001FE03FF00410043000200000;
+	20  :   000007E007F00010001007E007F000100000;
+	21  :   0000000007C007E00030003007E007C00000;
+	22  :   000007E007F0003001E0003007F007E00000;
+	23  :   00000410063003E001C003E0063004100000;
+	24  :   000007E207F200120012001607FC07F80000;
+	25  :   00000630067004D005900710063004300000;
+END;

@@ -1,0 +1,27 @@
+module vga(clk,clk_rst,vga_r,vga_g,vga_b,vga_clk,vga_sync_n,vga_blank_n,hsync,vsync);
+input clk,clk_rst;
+output [7:0]vga_r;
+output [7:0]vga_g;
+output [7:0]vga_b;
+output vga_clk;
+
+output reg vga_sync_n;
+output vga_blank_n;
+output hsync,vsync;
+wire [11:0]vga_data;
+wire [9:0]h_addr;
+wire [9:0]v_addr;
+wire hsync,vsync;
+
+initial
+begin
+	vga_sync_n=0;
+end
+
+image_data idata({h_addr,v_addr[8:0]},clk,vga_data);
+
+clkgen #(25000000) my_vgaclk(clk,!clk_rst,1'b1,vga_clk);
+
+vga_ctrl ctrl(vga_clk,!clk_rst,vga_data,h_addr,v_addr,hsync,vsync,vga_blank_n,vga_r,vga_g,vga_b);
+
+endmodule
